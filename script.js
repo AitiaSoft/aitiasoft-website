@@ -60,7 +60,7 @@ const observer = new IntersectionObserver((entries) => {
     });
 }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
 
-document.querySelectorAll('.about-card, .solution-card, .tech-card, .industry-card').forEach((el, i) => {
+document.querySelectorAll('.about-card, .solution-card, .tech-card, .industry-card, .portfolio-card').forEach((el, i) => {
     el.style.opacity = '0';
     el.style.transform = 'translateY(20px)';
     el.style.transition = `opacity 0.6s ease ${i * 0.08}s, transform 0.6s ease ${i * 0.08}s`;
