@@ -400,7 +400,7 @@
                         </div>
                     </div>
                 </div>
-                <form class="contact-form" id="contact-form" action="https://formspree.io/rvaldez@aitiasoft.com" method="POST">
+                <form class="contact-form" id="contact-form" action="https://formsubmit.co/rvaldez@aitiasoft.com" method="POST">
                     <input type="text" name="name" placeholder="Your Name" required>
                     <input type="email" name="email" placeholder="Your Email" required>
                     <input type="text" name="company" placeholder="Company">
@@ -415,8 +415,10 @@
                     </select>
                     <textarea name="message" placeholder="Tell us about your project..." rows="4"></textarea>
                     <!-- Honeypot: hidden from humans, bots auto-fill it → submission silently rejected -->
-                    <input type="text" name="_gotcha" style="display:none !important" tabindex="-1" autocomplete="off">
+                    <input type="text" name="_honey" style="display:none !important" tabindex="-1" autocomplete="off">
                     <input type="hidden" name="_subject" value="New inquiry from AitiaSoft website">
+                    <input type="hidden" name="_captcha" value="false">
+                    <input type="hidden" name="_next" value="https://aitiasoft.com/#contact">
                     <button type="submit" class="btn btn-primary">Send Message</button>
                 </form>
             </div>
