@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AitiaSoft — Telecom Expense Management Solutions</title>
+    <meta name="description" content="AitiaSoft delivers AI-powered Telecom Expense Management solutions that help businesses optimize costs, automate invoice processing, and gain real-time visibility into telecom spending.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="#" class="logo">
+                <img src="assets/logo.png" alt="AitiaSoft" class="logo-img">
+            </a>
+            <div class="nav-links">
+                <a href="#about">About</a>
+                <a href="#solutions">Solutions</a>
+                <a href="#technology">Technology</a>
+                <a href="#industries">Industries</a>
+                <a href="#contact" class="btn btn-nav">Contact Us</a>
+            </div>
+            <div class="nav-right">
+                <div class="theme-switcher" id="theme-switcher">
+                    <button class="theme-btn active" data-theme="light" title="Light">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16">
+                            <circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>
+                        </svg>
+                    </button>
+                    <button class="theme-btn" data-theme="dark" title="Dark">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16">
+                            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+                        </svg>
+                    </button>
+                    <button class="theme-btn" data-theme="system" title="System">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16">
+                            <rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/>
+                        </svg>
+                    </button>
+                </div>
+                <button class="mobile-toggle" aria-label="Menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <div class="hero-badge">
+                        <span class="badge-icon">⚡</span>
+                        AI-Powered Telecom Expense Management
+                    </div>
+                    <h1 class="hero-title">
+                        Simplify complexity.<br>
+                        <span class="gradient-text">Optimize telecom spend.</span>
+                    </h1>
+                    <p class="hero-subtitle">
+                        AitiaSoft delivers intelligent Telecom Expense Management solutions that leverage 
+                        AI and machine learning to parse, analyze, and audit your invoices with unprecedented 
+                        accuracy — saving you time and money.
+                    </p>
+                    <div class="hero-actions">
+                        <a href="#contact" class="btn btn-primary">Schedule a Demo</a>
+                        <a href="#solutions" class="btn btn-outline">Explore Solutions</a>
+                    </div>
+                    <div class="hero-stats">
+                        <div class="stat">
+                            <span class="stat-value">20+</span>
+                            <span class="stat-label">Years of Experience</span>
+                        </div>
+                        <div class="stat-divider"></div>
+                        <div class="stat">
+                            <span class="stat-value">2</span>
+                            <span class="stat-label">Continents Served</span>
+                        </div>
+                        <div class="stat-divider"></div>
+                        <div class="stat">
+                            <span class="stat-value">AI</span>
+                            <span class="stat-label">Powered Analytics</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero-visual">
+                    <div class="dashboard-preview">
+                        <div class="dash-header">
+                            <div class="dash-dots"><span></span><span></span><span></span></div>
+                            <span class="dash-title">Expense Dashboard</span>
+                        </div>
+                        <div class="dash-body">
+                            <div class="dash-metric">
+                                <span class="metric-label">Monthly Spend</span>
+                                <span class="metric-value">$247,830</span>
+                                <span class="metric-change down">↓ 12.4% vs last month</span>
+                            </div>
+                            <div class="dash-chart">
+                                <div class="bar" style="height: 60%"></div>
+                                <div class="bar" style="height: 80%"></div>
+                                <div class="bar" style="height: 45%"></div>
+                                <div class="bar" style="height: 90%"></div>
+                                <div class="bar" style="height: 70%"></div>
+                                <div class="bar active" style="height: 55%"></div>
+                            </div>
+                            <div class="dash-insights">
+                                <div class="insight">
+                                    <span class="insight-icon">🤖</span>
+                                    <span>AI detected 23 billing anomalies</span>
+                                </div>
+                                <div class="insight">
+                                    <span class="insight-icon">💰</span>
+                                    <span>$34,200 in potential savings found</span>
+                                </div>
+                                <div class="insight">
+                                    <span class="insight-icon">✅</span>
+                                    <span>847 invoices auto-validated</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="section-header">
+                <h2>About <span class="gradient-text">AitiaSoft</span></h2>
+                <p>Over two decades of transforming telecom expense management</p>
+            </div>
+            <div class="about-grid">
+                <div class="about-card">
+                    <div class="about-icon">🏢</div>
+                    <h3>Our Story</h3>
+                    <p>AITIASoft Inc is a pioneering American software development company with a rich legacy spanning over two decades. Established with a vision to transform how businesses manage their telecom expenses, we have consistently delivered cutting-edge solutions that empower organizations in the United States and Latin America.</p>
+                </div>
+                <div class="about-card">
+                    <div class="about-icon">🎯</div>
+                    <h3>Our Mission</h3>
+                    <p>To empower organizations with cutting-edge Telecom Expense Management solutions that simplify complexity, enhance operational efficiency, and drive cost savings. We believe technology should work for you — not the other way around.</p>
+                </div>
+                <div class="about-card">
+                    <div class="about-icon">💎</div>
+                    <h3>Our Values</h3>
+                    <p>Integrity, innovation, and customer-centricity are at the heart of our culture. We hold ourselves to the highest ethical standards and forge lasting partnerships with our clients, delivering solutions that don't just solve problems but elevate operations.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Solutions Section -->
+    <section class="solutions" id="solutions">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our <span class="gradient-text">Solutions</span></h2>
+                <p>Comprehensive Telecom Expense Management powered by AI</p>
+            </div>
+            <div class="solutions-grid">
+                <div class="solution-card">
+                    <div class="solution-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+                            <polyline points="7 10 12 15 17 10"/>
+                            <line x1="12" y1="15" x2="12" y2="3"/>
+                        </svg>
+                    </div>
+                    <h3>Invoice Processing & Validation</h3>
+                    <p>AI-powered invoice parsing that automatically identifies billing errors and discrepancies. Our machine learning models ensure you only pay for what you use — with 99.7% accuracy.</p>
+                </div>
+                <div class="solution-card">
+                    <div class="solution-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/>
+                        </svg>
+                    </div>
+                    <h3>Cost Analysis & Optimization</h3>
+                    <p>Detailed cost breakdowns and AI-driven analysis reveal where your telecom dollars go. We identify cost-saving opportunities and provide actionable optimization strategies.</p>
+                </div>
+                <div class="solution-card">
+                    <div class="solution-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+                        </svg>
+                    </div>
+                    <h3>Vendor Management</h3>
+                    <p>We handle vendor relationships on your behalf — optimizing contracts, negotiating favorable terms, and ensuring you get maximum value from every telecom provider.</p>
+                </div>
+                <div class="solution-card">
+                    <div class="solution-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/>
+                        </svg>
+                    </div>
+                    <h3>Contract Negotiation</h3>
+                    <p>Our experts negotiate telecom contracts with an eye on cost savings, favorable terms, and the flexibility to adapt to your evolving business needs.</p>
+                </div>
+                <div class="solution-card">
+                    <div class="solution-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                        </svg>
+                    </div>
+                    <h3>Compliance Management</h3>
+                    <p>Stay compliant with industry regulations and internal policies. We monitor and manage compliance to reduce the risk of costly fines and penalties.</p>
+                </div>
+                <div class="solution-card">
+                    <div class="solution-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/>
+                        </svg>
+                    </div>
+                    <h3>Real-Time Reporting</h3>
+                    <p>Interactive dashboards and reports powered by Power BI provide instant insights into your telecom expenses, performance metrics, and spending trends.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technology Section -->
+    <section class="technology" id="technology">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our <span class="gradient-text">Technology Stack</span></h2>
+                <p>Enterprise-grade tools powering intelligent solutions</p>
+            </div>
+            <div class="tech-grid">
+                <div class="tech-card">
+                    <div class="tech-logo">C#</div>
+                    <h4>C# & ASP.NET</h4>
+                    <p>Scalable, secure, high-performance applications built on Microsoft's robust framework.</p>
+                </div>
+                <div class="tech-card">
+                    <div class="tech-logo">☁️</div>
+                    <h4>Microsoft Azure</h4>
+                    <p>Cloud infrastructure delivering reliability, scalability, and global reach for all our solutions.</p>
+                </div>
+                <div class="tech-card">
+                    <div class="tech-logo">📊</div>
+                    <h4>Power BI</h4>
+                    <p>Data visualization and business intelligence that turns complex data into actionable insights.</p>
+                </div>
+                <div class="tech-card">
+                    <div class="tech-logo">⚙️</div>
+                    <h4>Power Platform</h4>
+                    <p>Custom apps, automated workflows, and intelligent chatbots that enhance operational efficiency.</p>
+                </div>
+                <div class="tech-card featured">
+                    <div class="tech-logo">🤖</div>
+                    <h4>AI & Machine Learning</h4>
+                    <p>Advanced models that parse, analyze, and audit telecom invoices with unprecedented precision and speed.</p>
+                </div>
+                <div class="tech-card">
+                    <div class="tech-logo">🔗</div>
+                    <h4>API Integrations</h4>
+                    <p>Seamless connectivity with your existing systems, ERPs, and telecom providers.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Industries Section -->
+    <section class="industries" id="industries">
+        <div class="container">
+            <div class="section-header">
+                <h2>Industries We <span class="gradient-text">Serve</span></h2>
+                <p>Tailored solutions for diverse sectors across the Americas</p>
+            </div>
+            <div class="industries-grid">
+                <div class="industry-card">
+                    <span class="industry-icon">🏨</span>
+                    <h3>Hospitality</h3>
+                    <p>Manage voice, data, Wi-Fi, and guest services telecom expenses across hotel chains and resorts.</p>
+                </div>
+                <div class="industry-card">
+                    <span class="industry-icon">🛍️</span>
+                    <h3>Retail</h3>
+                    <p>Optimize telecom spending across multi-location retail operations with centralized management.</p>
+                </div>
+                <div class="industry-card">
+                    <span class="industry-icon">🎬</span>
+                    <h3>Entertainment</h3>
+                    <p>Support the unique telecom infrastructure needs of entertainment and media companies.</p>
+                </div>
+                <div class="industry-card">
+                    <span class="industry-icon">🏥</span>
+                    <h3>Healthcare</h3>
+                    <p>Ensure compliant, cost-efficient telecom management for healthcare organizations.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA / Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="contact-card">
+                <div class="contact-text">
+                    <h2>Ready to optimize your <span class="gradient-text">telecom expenses</span>?</h2>
+                    <p>Let's discuss how AitiaSoft can help your organization save money, streamline operations, and gain real-time visibility into your telecom spending.</p>
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20" height="20">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/>
+                            </svg>
+                            <a href="mailto:info@aitiasoft.com">info@aitiasoft.com</a>
+                        </div>
+                        <div class="contact-item">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20" height="20">
+                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/>
+                            </svg>
+                            <span>United States & Latin America</span>
+                        </div>
+                    </div>
+                </div>
+                <form class="contact-form" id="contact-form">
+                    <input type="text" placeholder="Your Name" required>
+                    <input type="email" placeholder="Your Email" required>
+                    <input type="text" placeholder="Company">
+                    <textarea placeholder="Tell us about your telecom challenges..." rows="4"></textarea>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <img src="assets/logo.png" alt="AitiaSoft" class="footer-logo">
+                    <p>Transforming telecom expense management with AI-powered solutions since 2004.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Company</h4>
+                    <a href="#about">About Us</a>
+                    <a href="#solutions">Solutions</a>
+                    <a href="#technology">Technology</a>
+                    <a href="#contact">Contact</a>
+                </div>
+                <div class="footer-links">
+                    <h4>Solutions</h4>
+                    <a href="#solutions">Invoice Processing</a>
+                    <a href="#solutions">Cost Analysis</a>
+                    <a href="#solutions">Vendor Management</a>
+                    <a href="#solutions">Compliance</a>
+                </div>
+                <div class="footer-links">
+                    <h4>Connect</h4>
+                    <a href="mailto:info@aitiasoft.com">Email Us</a>
+                    <a href="https://www.linkedin.com/company/aitiasoft" target="_blank">LinkedIn</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 AitiaSoft Inc. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
