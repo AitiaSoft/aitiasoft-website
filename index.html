@@ -400,11 +400,11 @@
                         </div>
                     </div>
                 </div>
-                <form class="contact-form" id="contact-form">
-                    <input type="text" placeholder="Your Name" required>
-                    <input type="email" placeholder="Your Email" required>
-                    <input type="text" placeholder="Company">
-                    <select>
+                <form class="contact-form" id="contact-form" action="https://formspree.io/f/rvaldez@aitiasoft.com" method="POST">
+                    <input type="text" name="name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <input type="text" name="company" placeholder="Company">
+                    <select name="service">
                         <option value="" disabled selected>How can we help?</option>
                         <option>Custom Software Development</option>
                         <option>Staff Augmentation</option>
@@ -413,7 +413,10 @@
                         <option>Consulting & Strategy</option>
                         <option>Other</option>
                     </select>
-                    <textarea placeholder="Tell us about your project..." rows="4"></textarea>
+                    <textarea name="message" placeholder="Tell us about your project..." rows="4"></textarea>
+                    <!-- Honeypot: hidden from humans, bots auto-fill it → submission silently rejected -->
+                    <input type="text" name="_gotcha" style="display:none !important" tabindex="-1" autocomplete="off">
+                    <input type="hidden" name="_subject" value="New inquiry from AitiaSoft website">
                     <button type="submit" class="btn btn-primary">Send Message</button>
                 </form>
             </div>

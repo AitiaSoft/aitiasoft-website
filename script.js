@@ -82,7 +82,7 @@ if (heroSubtitle) {
     setTimeout(() => { heroSubtitle.style.opacity = '1'; }, 500);
 }
 
-// ===== Contact Form =====
+// ===== Contact Form (Formspree + Honeypot) =====
 const contactForm = document.getElementById('contact-form');
 if (contactForm) {
     contactForm.addEventListener('submit', function(e) {
@@ -90,16 +90,36 @@ if (contactForm) {
         const btn = this.querySelector('button');
         btn.textContent = 'Sending...';
         btn.style.opacity = '0.7';
-        setTimeout(() => {
-            btn.textContent = '✓ Message Sent!';
-            btn.style.background = 'linear-gradient(135deg, #10B981, #059669)';
+        btn.disabled = true;
+
+        fetch(this.action, {
+            method: 'POST',
+            body: new FormData(this),
+            headers: { 'Accept': 'application/json' }
+        }).then(res => {
+            if (res.ok) {
+                btn.textContent = '✓ Message Sent!';
+                btn.style.background = 'linear-gradient(135deg, #10B981, #059669)';
+                btn.style.opacity = '1';
+                this.reset();
+                setTimeout(() => {
+                    btn.textContent = 'Send Message';
+                    btn.style.background = '';
+                    btn.disabled = false;
+                }, 3000);
+            } else {
+                throw new Error('Failed');
+            }
+        }).catch(() => {
+            btn.textContent = 'Error — try again';
+            btn.style.background = 'linear-gradient(135deg, #EF4444, #DC2626)';
             btn.style.opacity = '1';
-            this.reset();
             setTimeout(() => {
                 btn.textContent = 'Send Message';
                 btn.style.background = '';
+                btn.disabled = false;
             }, 3000);
-        }, 1000);
+        });
     });
 }
 
