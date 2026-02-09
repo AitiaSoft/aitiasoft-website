@@ -777,6 +777,180 @@ ul { list-style: none; }
     color: var(--text-dim);
 }
 
+/* ===== PORTFOLIO ===== */
+.portfolio {
+    padding: 100px 0;
+    background: var(--bg-alt);
+    border-top: 1px solid var(--border-light);
+    border-bottom: 1px solid var(--border-light);
+}
+
+.portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+}
+
+.portfolio-card {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-lg);
+    padding: 36px;
+    transition: all 0.3s ease;
+}
+
+.portfolio-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 40px var(--shadow);
+}
+
+.portfolio-header {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 16px;
+}
+
+.portfolio-icon {
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 12px;
+    color: white;
+    font-weight: 800;
+    font-size: 0.85rem;
+    flex-shrink: 0;
+}
+
+.portfolio-header h3 {
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin-bottom: 2px;
+}
+
+.portfolio-client {
+    font-size: 0.8rem;
+    color: var(--text-dim);
+}
+
+.portfolio-card p {
+    font-size: 0.9rem;
+    color: var(--text-muted);
+    line-height: 1.7;
+    margin-bottom: 16px;
+}
+
+.portfolio-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.portfolio-tags span {
+    padding: 4px 12px;
+    background: rgba(232, 121, 47, 0.06);
+    border: 1px solid rgba(232, 121, 47, 0.12);
+    border-radius: 100px;
+    font-size: 0.75rem;
+    font-weight: 500;
+    color: var(--orange);
+}
+
+/* ===== PROJECT LIST (HERO) ===== */
+.project-list {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 16px;
+}
+
+.project-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 12px;
+    background: var(--bg-alt);
+    border-radius: 8px;
+    font-size: 0.85rem;
+}
+
+.project-dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    flex-shrink: 0;
+}
+
+.project-name {
+    font-weight: 600;
+    color: var(--text);
+}
+
+.project-tag {
+    margin-left: auto;
+    font-size: 0.7rem;
+    color: var(--text-dim);
+}
+
+/* ===== FEATURED CARD ===== */
+.featured-card {
+    border-color: rgba(232, 121, 47, 0.2);
+    background: linear-gradient(135deg, rgba(232, 121, 47, 0.03), transparent);
+}
+
+/* ===== ENGAGEMENT MODELS ===== */
+.engagement-models {
+    margin-top: 32px;
+}
+
+.engagement-models h4 {
+    font-size: 0.85rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--text-dim);
+    margin-bottom: 12px;
+}
+
+.model-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.model-tags span {
+    padding: 8px 16px;
+    background: rgba(232, 121, 47, 0.06);
+    border: 1px solid rgba(232, 121, 47, 0.12);
+    border-radius: 100px;
+    font-size: 0.85rem;
+    color: var(--text-muted);
+}
+
+/* ===== CONTACT SELECT ===== */
+.contact-form select {
+    padding: 14px 18px;
+    border-radius: 10px;
+    border: 1px solid var(--border);
+    background: var(--bg);
+    color: var(--text);
+    font-size: 0.95rem;
+    font-family: inherit;
+    outline: none;
+    transition: border-color 0.2s;
+    appearance: none;
+    -webkit-appearance: none;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath fill='%239A9AB0' d='M6 8L1 3h10z'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 16px center;
+}
+
+.contact-form select:focus {
+    border-color: var(--orange);
+}
+
 /* ===== ANIMATIONS ===== */
 @keyframes fadeUp {
     from { opacity: 0; transform: translateY(20px); }
@@ -804,7 +978,8 @@ ul { list-style: none; }
 
     .about-grid,
     .solutions-grid,
-    .tech-grid {
+    .tech-grid,
+    .portfolio-grid {
         grid-template-columns: 1fr;
     }
 
